@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h1{
+           
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        #container{
+            height: 300px;
+            width: 300px;
+           
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            margin: auto;
+            margin-top: 30px;
+            padding: 25px;
+        }
+        #calculator{
+            
+            /* margin-top: 20px;
+            margin-left: 20px; */
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,55px);
+            grid-template-rows: repeat(5,45px);
+            gap: 10px;
+            grid-template-areas: 
+            "a a a a"
+            "b c d e"
+            "f g h i"
+            "j k l m"
+            "n o p q";
+
+            
+
+
+        }
+        #calculator>div{
+           
+            
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+            display: flex;
+           
+            align-items: center;
+            justify-content: center;
+            color: black ;
+            font-weight: bold;
+            
+           
+            
+
+        }
+        #calculator>div:hover{
+            background-color: teal;
+            cursor: pointer;
+
+        }
+
+        #calculator>div:nth-child(1){
+            grid-area: a;
+            background-color: aquamarine;
+            /* margin-bottom: 10px; */
+        }
+        #calculator>div:nth-child(2){
+            grid-area: b;
+            /* background-color: blue; */
+        }
+        #calculator>div:nth-child(3){
+            grid-area: c;
+        }
+        #calculator>div:nth-child(4){
+            grid-area: d;
+        }
+        #calculator>div:nth-child(5){
+            grid-area: e;
+        }
+        #calculator>div:nth-child(6){
+            grid-area: f;
+        }
+        #calculator>div:nth-child(7){
+            grid-area: g;
+        }
+        #calculator>div:nth-child(8){
+            grid-area: h;
+        }
+        #calculator>div:nth-child(9){
+            grid-area: i;
+        }
+        #calculator>div:nth-child(10){
+            grid-area: j;
+        }
+        #calculator>div:nth-child(11){
+            grid-area: k;
+        }
+        #calculator>div:nth-child(12){
+            grid-area: l;
+        }
+        #calculator>div:nth-child(13){
+            grid-area: m;
+        }
+        #calculator>div:nth-child(14){
+            grid-area: n;
+        }
+        #calculator>div:nth-child(15){
+            grid-area: o;
+        }
+        #calculator>div:nth-child(16){
+            grid-area: p;
+        }
+        #calculator>div:nth-child(17){
+            grid-area: q;
+            color: blue;
+        }
+        .red{
+            background-color: red;
+            color: blue;
+        }
+        .black{
+            /* background-color: black; */
+           color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Calculator</h1>
+    <div id="container" >
+        <div id="calculator">
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div black>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        
+        <div class="black">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="black">*</div>
+        <div class="red">c</div>
+        <div>0</div>
+        <div class="black">=</div>
+        <div>/</div>
+    </div>
+    </div>
+    
+</body>
+</html>

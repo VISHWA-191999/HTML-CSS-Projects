@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Movies</title>
+
+    <style>
+        h1{
+            text-align: center;
+            /* margin: auto; */
+            color: crimson;
+            margin-bottom: 50px;
+        }
+        .container{
+            /* border: 1px solid black;
+            height: 800px;*/
+            width: 60%; 
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,150px);
+            /* padding: 20px; */
+            gap: 20px;
+
+        }
+        .container>div{
+            display: flex;
+            border: 0.2px solid red;
+            /* padding: 20px; */
+            
+             /* flex-wrap: wrap;  */
+            /* flex-direction: row;  */ */
+            
+           
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        button{
+            border: 0;
+            height: 30px;
+            width: 105px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+        }
+
+        /* for medium screen */
+
+        @media only screen and (min-width:361px) and (max-width:720px)
+        {
+            img{
+                border-radius: 50%;
+
+            }
+            .container>div{
+                display:flex;
+                background-color: brown;
+                flex-direction:column;
+                /* grid-template-rows: auto; */
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .container{
+                grid-template-rows: auto;
+                /* padding: 10px; */
+            }
+        }
+
+        /* for small screen */
+        @media all and (min-width: 80px) and (max-width:360px)
+        {
+            img{
+                border-radius: 50%;
+            }
+            .container>div{
+                display: flex;
+                flex-direction: column;
+                background-color: aqua;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .container{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+            }
+        }
+
+        .container>div>div{
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Just Movies</h1>
+    <div class="container">
+    <div>
+        <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Screenshot_20220214-154417__012022021410145520220214120722.jpg" alt=""> 
+        <div>
+         <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 Mar 2022</p>
+        <button>Book Tickets</button> 
+    </div>
+    </div>
+    <div>
+        <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Screenshot_20220214-154417__012022021410145520220214120722.jpg" alt="">
+        <div>
+         <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 Mar 2022</p>
+        <button>Book Tickets</button> 
+        
+    </div>
+</div>
+
+    <div>
+        <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Screenshot_20220214-154417__012022021410145520220214120722.jpg" alt="">
+         <div>
+         <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 Mar 2022</p>
+        <button>Book Tickets</button> 
+        
+    </div>
+      
+    </div>
+    <div>
+        <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Screenshot_20220214-154417__012022021410145520220214120722.jpg" alt=""> <div>
+         <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 Mar 2022</p>
+        <button>Book Tickets</button> 
+        
+    </div>
+       
+    </div>
+    <div>
+        <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Screenshot_20220214-154417__012022021410145520220214120722.jpg" alt="">  <div>
+         <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 Mar 2022</p>
+        <button>Book Tickets</button> 
+        
+    </div>
+        
+    </div>
+    <div>
+        <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Screenshot_20220214-154417__012022021410145520220214120722.jpg" alt="">  <div>
+         <h2>Radhe Shyam</h2>
+        <p>Releasing on 11 Mar 2022</p>
+        <button>Book Tickets</button> 
+        
+    </div>
+
+       
+   </div>
+</div>
+</body>
+</html>
